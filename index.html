@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <link rel="shortcut icon" href="/img/icons/dev.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="home">
+        <h1>Привет!</h1>
+        <p>Моё имя Кирилл,<br> я начинающий разрабочик!</p>
+        <a href="https://github.com/KTarasuk" target="_blank">
+            <img src="img/GitHub.svg" alt="GitHub">
+        </a>
+        <button id="btnSkills" onclick="btnSkill()">Что умею?</button>
+    </div>
+    
+    <div id="skills">
+        <h2>Я работал с,</h2>
+        <ul>
+            <li>C++</li>
+            <li>Java</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+        </ul>
+        <button onclick="btnHome()">Вернутся назад</button>
+    </div>
+
+    <script>
+        const home = document.getElementById('home');
+        const skills = document.getElementById('skills');
+
+
+        function btnSkill(){
+            home.style.display = 'none';
+            skills.style.display = 'contents';
+        }
+        function btnHome(){
+            home.style.display = 'contents';
+            skills.style.display = 'none';
+        }
+
+
+    </script>
+</body>
+</html>

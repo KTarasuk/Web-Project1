@@ -1,0 +1,106 @@
+@import url(/fonts/fonts.css);
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family: Roboto, sans-serif;
+    color: white;
+}
+
+body{
+    background: linear-gradient(90deg, rgb(07,00,57), rgb(04,00,37));
+}
+
+button{
+    padding: 10px;
+    border: none;
+    border-radius: 10px 0px;
+    background: linear-gradient(180deg, orange, yellow);
+}
+
+#home h1{
+    font-size: 48px;
+    margin-top: 64px;
+    margin-left: 64px;
+}
+
+#home p{
+    font-size: 40px;
+    margin-top: 10px;
+    margin-left: 64px;
+}
+
+#home img{
+    margin-left: 48px;
+    margin-top: 4em;
+}
+
+#home button{
+    position: relative;
+    top: 3em;
+    left: -21em
+}
+
+#home{
+    display: contents;
+}
+
+#skills{
+    display: none;
+    margin: 48px 48px;
+}
+#skills h2{
+    font-size: 48px;
+    margin-top: 64px;
+    margin-left: 64px;
+}
+
+#skills li{
+    font-size: 40px;
+    margin-top: 10px;
+    margin-left: 64px;
+}
+
+#skills li:nth-child(1){
+    list-style-image: url(/img/icon_C++.svg);
+}
+#skills li:nth-child(2){
+    list-style-image: url(/img/icon_Java.svg);
+}
+#skills li:nth-child(3){
+    list-style-image: url(/img/icon_HTML5.svg);
+}
+#skills li:nth-child(4){
+    list-style-image: url(/img/icon_CSS3.svg);
+}
+#skills li:nth-child(5){
+    list-style-image: url(/img/icon_JavaScript.svg);
+}
+
+
+#skills button{
+    position: relative;
+    left: 10px;
+    top: 10px;
+}
+
+/* mobile */
+@media screen and (max-width: 600px) {
+    #home h1{
+        font-size: 32px;
+        margin: 28px 0px 0px 28px;
+    }
+    #home p{
+        font-size: 24px;
+        margin: 10px 0px 0px 28px;
+    }
+    #home img{
+        width: 200px;
+        margin: 64px 0px 0px 28px;
+    }
+    #home button{
+        position: relative;
+        left: -10px;
+        top: -18em;
+    }
+}
