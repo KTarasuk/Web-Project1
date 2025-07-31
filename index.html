@@ -4,10 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио</title>
-    <link rel="shortcut icon" href="/img/icons/dev.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/img/dev.png" type="image/x-icon">
+    <link rel="stylesheet" href="/main.css">
 </head>
 <body>
+
+    <header>
+        <ul class="list">
+            <li>Главная</li>
+            <li>С чем работал?</li>
+        </ul>
+        <div>
+            <span>
+                <div class="menu_line1"></div>
+                <div class="menu_line2"></div>
+                <div class="menu_line3"></div>
+            </span>
+        </div>
+    </header>
 
     <div id="home">
         <h1>Привет!</h1>
@@ -15,7 +29,6 @@
         <a href="https://github.com/KTarasuk" target="_blank">
             <img src="img/GitHub.svg" alt="GitHub">
         </a>
-        <button id="btnSkills" onclick="btnSkill()">Что умею?</button>
     </div>
     
     <div id="skills">
@@ -27,24 +40,8 @@
             <li>CSS3</li>
             <li>JavaScript</li>
         </ul>
-        <button onclick="btnHome()">Вернутся назад</button>
     </div>
 
-    <script>
-        const home = document.getElementById('home');
-        const skills = document.getElementById('skills');
-
-
-        function btnSkill(){
-            home.style.display = 'none';
-            skills.style.display = 'contents';
-        }
-        function btnHome(){
-            home.style.display = 'contents';
-            skills.style.display = 'none';
-        }
-
-
-    </script>
+    <script src="/main.js"></script>
 </body>
 </html>
